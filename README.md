@@ -9,9 +9,11 @@ pip install -r requirements.txt
 ## Executar 
 
 Para criacao do banco de dados 
+
 	python create_db.py
 	
 Para executar o sistema
+
 	python app.py
 
 ## Usando API 
