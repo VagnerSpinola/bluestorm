@@ -5,7 +5,14 @@ Teste para admissao na empresa
 
 pip install -r requirements.txt
 
-python app.py
+
+## Executar 
+
+Para criacao do banco de dados 
+	python create_db.py
+	
+Para executar o sistema
+	python app.py
 
 ## Usando API 
 
