@@ -9,13 +9,15 @@ python app.py
 
 ## Usando API 
 
-### Cadastrar Usuarios / Clientes / Medicamentos
+### Cadastrar Usuarios / Clientes / Medicamentos / Venda
 
 http://127.0.0.1:5000/usuarios
 
 http://127.0.0.1:5000/clientes
 
 http://127.0.0.1:5000/medicamentos
+
+http://127.0.0.1:5000/venda
 
 Metodo - POST
 
@@ -39,6 +41,11 @@ Body -
 {
 	"nome": "nome_cliente",
 	"telefone": "005511967594312",
+}
+
+{
+	"cli_id": 2,
+	"med_id": 61,
 }
 
 ### Consultar todos Usuarios / Clientes / Medicamentos
