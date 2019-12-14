@@ -4,6 +4,7 @@ Teste para admissao na empresa
 ## Instalacao de dependencias 
 
 pip install -r requirements.txt
+
 python app.py
 
 ## Usando API 
@@ -17,5 +18,8 @@ http://127.0.0.1:5000/user
 	"password": "12345",
 	"status": 1
 }
+
+0 = Inativo
+1 = Ativo
 
 
