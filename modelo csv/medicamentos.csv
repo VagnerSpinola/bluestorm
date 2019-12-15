@@ -1,0 +1,22 @@
+nome,tipo,dosagem_type,dosagem_vol,valor,fabricante
+remedio 1,capisula,ml,5,14,fabricante 1
+remedio 2,capisula,ml,5,15,fabricante 2
+remedio 3,capisula,ml,5,23,fabricante 3
+remedio 4,capisula,ml,5,16,fabricante 4
+remedio 5,capisula,ml,5,17,fabricante 5
+remedio 6,ceringa,ml,5,24,fabricante 6
+remedio 7,ceringa,ml,5,18,fabricante 7
+remedio 8,ceringa,ml,5,223,fabricante 8
+remedio 9,ceringa,ml,5,23,fabricante 9
+remedio 10,ceringa,ml,5,20,fabricante 10
+remedio 11,comprimidos,mg,5,21,fabricante 11
+remedio 12,comprimidos,mg,5,23,fabricante 12
+remedio 13,comprimidos,mg,5,22,fabricante 13
+remedio 14,comprimidos,mg,5,23,fabricante 14
+remedio 15,comprimidos,mg,5,23,fabricante 15
+remedio 16,xarope,mg,5,24,fabricante 16
+remedio 17,xarope,mg,5,25,fabricante 17
+remedio 18,xarope,mg,5,545,fabricante 18
+remedio 19,xarope,mg,5,26,fabricante 19
+remedio 20,xarope,mg,5,27,fabricante 20
+remedio 21,xarope,mg,5,234,fabricante 21
