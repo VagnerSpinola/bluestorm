@@ -18,7 +18,7 @@ Para executar o sistema
 
 ## Usando API 
 
-A API conta com un sistema de autenticacao, entao nenhum comando funcionara sem a creacao de um usuario ativo, para ser criado um usuario ativo por meio da API sem usar diretamente o DB foi criado um sistema superuser 
+A API conta com un sistema de autenticacao, entao nenhum comando funcionara sem a criacao de um usuario ativo, para ser criado um usuario ativo por meio da API sem usar diretamente o DB foi criado um sistema superuser 
 
 http://127.0.0.1:5000/superuser
 
@@ -36,7 +36,7 @@ http://127.0.0.1:5000/login
 
 metodo - GET
 
-Inserir o super user apena creato como username/password com o tipo de Basic Auth na aba Auth, assim sera gerado um token com validade por 20 minutos.
+Inserir o usuario apena criado como username/password com o tipo de Basic Auth, assim sera gerado um token com validade por 20 minutos.
 Copiar este token, e inserir no headers como:
 
 key  	= x-access-token
@@ -75,12 +75,12 @@ Body -
 
 {
 	"nome": "nome_cliente",
-	"telefone": "005511967594312",
+	"telefone": "005511967594312"
 }
 
 {
 	"cli_id": 2,
-	"med_id": 61,
+	"med_id": 61
 }
 
 
@@ -93,6 +93,8 @@ http://127.0.0.1:5000/clientes
 
 http://127.0.0.1:5000/medicamentos
 
+http://127.0.0.1:5000/vendas
+
 Metodo - GET
 
 
@@ -100,6 +102,12 @@ Metodo - GET
 ### Consultar Usuario unico
 
 http://127.0.0.1:5000/usuarios/{username}
+
+http://127.0.0.1:5000/clientes/{id}
+
+http://127.0.0.1:5000/medicamentos/{id}
+
+http://127.0.0.1:5000/vendas/{id}
 
 Metodo - GET
 
@@ -120,7 +128,6 @@ Body -
 	"end": "2019-12-14"
 }
 
-Resultado no formato - Id do medicamento, quantidade vendida
 
 ### Importing CSV
 
@@ -130,6 +137,21 @@ http://127.0.0.1:5000/import
 
 Metodo - POST
 
-Eu criei um pequeno script client.py para enviar o csv e um file CSV com a ordem das colunas ( nao criei um sistema de analise do titulo das colunas para inserir no DB corretamente assim nao precisando ter order de coluna o file CSV )
+Script client.py para enviar o csv e um file CSV com a ordem das colunas ( nao criei um sistema de analise do titulo das colunas para inserir no DB corretamente assim nao precisando ter order de coluna o file CSV )
+
+### Export CSV
+
+Exporta um file CSV com todos os medicamentos ordenados por quantidade vendidas no periodo determinado 
+
+http://127.0.0.1:5000/export
+
+Metodo - POST
+
+Body -
+
+{
+	"start": "2019-12-14",
+	"end": "2019-12-14"
+}
 
 
