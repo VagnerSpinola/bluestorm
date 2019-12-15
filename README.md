@@ -52,7 +52,7 @@ http://127.0.0.1:5000/clientes
 
 http://127.0.0.1:5000/medicamentos
 
-http://127.0.0.1:5000/venda
+http://127.0.0.1:5000/vendas
 
 Metodo - POST
 
@@ -121,3 +121,15 @@ Body -
 }
 
 Resultado no formato - Id do medicamento, quantidade vendida
+
+### Importing CSV
+
+Para enviar medicamentos a API por meio de un file.csv
+
+http://127.0.0.1:5000/import
+
+Metodo - POST
+
+Eu criei um pequeno script client.py para enviar o csv e um file CSV com a ordem das colunas ( nao criei um sistema de analise do titulo das colunas para inserir no DB corretamente assim nao precisando ter order de coluna o file CSV )
+
+
