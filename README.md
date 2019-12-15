@@ -21,7 +21,7 @@ Para executar o sistema
 
 A API conta com un sistema de autenticacao, entao nenhum comando funcionara sem a criacao de um usuario ativo, para ser criado um usuario ativo por meio da API sem usar diretamente o DB foi criado um sistema superuser este processo nao deveria existir por deixar uma brexa na seguranca ja que nao requer nenhuma autenticacao mas para proposta de um teste e facilitar foi inserido.
 
-http://127.0.0.1:5000/superuser
+	http://127.0.0.1:5000/superuser
 
 metodo - POST
 
@@ -33,7 +33,7 @@ metodo - POST
 
 Apos a criacao do usuario usar o sistema de login 
 
-http://127.0.0.1:5000/login
+	http://127.0.0.1:5000/login
 
 metodo - GET
 
@@ -47,13 +47,13 @@ Ps. Apenas usuarios ATIVOS tem permisao de usar o sistema
 
 ### Cadastrar -  Usuarios / Clientes / Medicamentos / Vendas
 
-http://127.0.0.1:5000/usuarios
+	http://127.0.0.1:5000/usuarios
 
-http://127.0.0.1:5000/clientes
+	http://127.0.0.1:5000/clientes
 
-http://127.0.0.1:5000/medicamentos
+	http://127.0.0.1:5000/medicamentos
 
-http://127.0.0.1:5000/vendas
+	http://127.0.0.1:5000/vendas
 
 Metodo - POST
 
@@ -88,13 +88,13 @@ Body -
 
 ### Consultar geral -  Usuarios / Clientes / Medicamentos / Vendas
 
-http://127.0.0.1:5000/usuarios
+	http://127.0.0.1:5000/usuarios
 
-http://127.0.0.1:5000/clientes
+	http://127.0.0.1:5000/clientes
 
-http://127.0.0.1:5000/medicamentos
+	http://127.0.0.1:5000/medicamentos
 
-http://127.0.0.1:5000/vendas
+	http://127.0.0.1:5000/vendas
 
 Metodo - GET
 
@@ -102,13 +102,13 @@ Metodo - GET
 
 ### Consultar Unica
 
-http://127.0.0.1:5000/usuarios/{username}
+	http://127.0.0.1:5000/usuarios/{username}
 
-http://127.0.0.1:5000/clientes/{id}
+	http://127.0.0.1:5000/clientes/{id}
 
-http://127.0.0.1:5000/medicamentos/{id}
+	http://127.0.0.1:5000/medicamentos/{id}
 
-http://127.0.0.1:5000/vendas/{id}
+	http://127.0.0.1:5000/vendas/{id}
 
 Metodo - GET
 
@@ -116,7 +116,7 @@ Metodo - GET
 
 ### Consultar os Medicamentos mais vendidos 
 
-http://127.0.0.1:5000/topmedicamentos
+	http://127.0.0.1:5000/topmedicamentos
 
 Retorna uma lista com todos os medicamentos ordenados por quantidade vendidas no periodo determinado 
 
@@ -134,7 +134,7 @@ Body -
 
 Para enviar medicamentos a API por meio de un file.csv
 
-http://127.0.0.1:5000/import
+	http://127.0.0.1:5000/import
 
 Metodo - POST
 
@@ -145,7 +145,7 @@ Script client.py para enviar o csv e um file CSV com a ordem das colunas ( nao c
 
 Exporta um file CSV com todos os medicamentos ordenados por quantidade vendidas no periodo determinado 
 
-http://127.0.0.1:5000/export
+	http://127.0.0.1:5000/export
 
 Metodo - POST
 
