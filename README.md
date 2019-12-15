@@ -1,4 +1,5 @@
 # Bluestorm teste coding
+
 Teste para admissao na empresa
 
 ## Instalacao de dependencias 
@@ -18,7 +19,7 @@ Para executar o sistema
 
 ## Usando API 
 
-A API conta com un sistema de autenticacao, entao nenhum comando funcionara sem a criacao de um usuario ativo, para ser criado um usuario ativo por meio da API sem usar diretamente o DB foi criado um sistema superuser 
+A API conta com un sistema de autenticacao, entao nenhum comando funcionara sem a criacao de um usuario ativo, para ser criado um usuario ativo por meio da API sem usar diretamente o DB foi criado um sistema superuser este processo nao deveria existir por deixar uma brexa na seguranca ja que nao requer nenhuma autenticacao mas para proposta de um teste e facilitar foi inserido.
 
 http://127.0.0.1:5000/superuser
 
@@ -42,9 +43,9 @@ Copiar este token, e inserir no headers como:
 key  	= x-access-token
 value 	= {token copiado}
 
-Ps. Apenas usuarios ATIVOS tem permisao de usar o sistema 
+Ps. Apenas usuarios ATIVOS tem permisao de usar o sistema
 
-### Cadastrar Usuarios / Clientes / Medicamentos / Venda
+### Cadastrar -  Usuarios / Clientes / Medicamentos / Vendas
 
 http://127.0.0.1:5000/usuarios
 
@@ -85,7 +86,7 @@ Body -
 
 
 
-### Consultar todos Usuarios / Clientes / Medicamentos
+### Consultar geral -  Usuarios / Clientes / Medicamentos / Vendas
 
 http://127.0.0.1:5000/usuarios
 
@@ -99,7 +100,7 @@ Metodo - GET
 
 
 
-### Consultar Usuario unico
+### Consultar Unica
 
 http://127.0.0.1:5000/usuarios/{username}
 
@@ -139,6 +140,7 @@ Metodo - POST
 
 Script client.py para enviar o csv e um file CSV com a ordem das colunas ( nao criei um sistema de analise do titulo das colunas para inserir no DB corretamente assim nao precisando ter order de coluna o file CSV )
 
+
 ### Export CSV
 
 Exporta um file CSV com todos os medicamentos ordenados por quantidade vendidas no periodo determinado 
@@ -153,5 +155,3 @@ Body -
 	"start": "2019-12-14",
 	"end": "2019-12-14"
 }
-
-
