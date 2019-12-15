@@ -155,3 +155,17 @@ Body -
 	"start": "2019-12-14",
 	"end": "2019-12-14"
 }
+
+
+# Documentacao
+
+Para criar a documentacao automatizada em ../bluestorm/docs
+
+	make html
+	
+Ira criar a documentacao do projeto onde o index.html sera incluido em ../bluestorm/docs/_build/html
+
+
+# Tests Unitarios 
+
+Para executar os testes unitarios o sistema de autenticacao deve ser removido 
