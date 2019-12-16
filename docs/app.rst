@@ -1,7 +1,7 @@
-model module
-============
+app module
+==========
 
-.. automodule:: model
+.. automodule:: app
     :members:
     :undoc-members:
     :show-inheritance:
