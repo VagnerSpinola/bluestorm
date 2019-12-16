@@ -1,5 +1,4 @@
-from app import app
-from model import db
+from settings import app, db
 import os
 
 
