@@ -110,9 +110,9 @@ Metodo - GET
 
 
 
-### Consultar Unica
+### Atualizacao e Delete 
 
-	http://127.0.0.1:5000/usuarios/{username}
+	http://127.0.0.1:5000/usuarios/{public_id}
 
 	http://127.0.0.1:5000/clientes/{id}
 
@@ -120,9 +120,39 @@ Metodo - GET
 
 	http://127.0.0.1:5000/vendas/{id}
 
-Metodo - GET
+Metodo - PUT / DELETE
 
+Para o metodo PUT sao necessarios os dados a serem atualizados 
 
+Usuarios sera atualizado apenas o inativo para ativo caso nao deseje maiso usuario fazer um DELETE
+
+Medicamentos
+
+{
+	"nome": "titulo_medicamento",
+	"tipo": "tipo_de_medicamento",
+	"dosagem_vol": 5,
+	"dosagem_type": "ml",
+	"valor": 245,
+	"fabricante": "nome_fabricante"
+}
+
+Clientes
+
+{
+	"nome": "nome_cliente",
+	"telefone": "005511967594312"
+}
+
+Vendas
+
+cli_id = ID do cliente, caso nao seja claro 
+med_id = ID do medicamento
+
+{
+	"cli_id": 2,
+	"med_id": 61
+}
 
 ### Consultar os Medicamentos mais vendidos 
 
