@@ -15,7 +15,17 @@ Para criacao do banco de dados
 	
 Para executar o sistema
 
-	python app.py
+Executa um file com a aplicacao inicial sem tratamento de erros e nao compacto melhor script para ser analisado por iniciantes pois contem cada chamada em funcoes separadas.
+
+	python app.py 
+
+Executa um file compacto onde as funcoes fazem um controle de methodo enviado
+
+	python app_compact.py
+	
+Executa um file compacto e com tratamentos de erros ex. se os dados enviados estao de acordo com os dados esperados pelo sistema 
+
+	python app_compact_error_check.py
 
 ## Usando API 
 
