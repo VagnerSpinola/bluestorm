@@ -199,11 +199,12 @@ Body -
 
 # Documentacao
 
-Para criar a documentacao automatizada em ../bluestorm/docs
+Para criar a documentacao automatizada va em ../bluestorm/docs 
 
 	make html
 	
 Ira criar a documentacao do projeto onde o index.html sera incluido em ../bluestorm/docs/_build/html
+Foi criado apenas uma amostra de como criar documentacao usando Sphinx que e' a biblioteca de python onde ate a documentacao de python foi criada com ela.
 
 
 # Tests Unitarios 
