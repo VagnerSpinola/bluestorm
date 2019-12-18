@@ -235,7 +235,7 @@ def toker_required(f):
         Verifica se o usuario esta usando um token e se este token e' ainda valido
 
         :type f: string
-        :param f: Nunca parei para pesquisa suas funcao 
+        :param f: E' a funcao a ser docarada pelo decorator 
     '''
 
     @wraps(f)
